@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Created by 李雪滢 on 2020.4.16-->
+<!--Created by 李雪滢 on 2020.6.15-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,62 +9,40 @@
         android:layout_height="42dp"
         android:layout_weight="1">
         <ImageButton
-            android:id="@+id/back2"
+            android:id="@+id/back6"
             android:layout_width="52dp"
             android:layout_height="52dp"
             android:layout_alignParentLeft="true"
             android:src="@mipmap/arrowback" />
         <ImageButton
-            android:id="@+id/search2"
+            android:id="@+id/search3"
             android:layout_width="52dp"
             android:layout_height="52dp"
             android:layout_alignParentRight="true"
             android:src="@mipmap/search" />
     </RelativeLayout>
-    <ProgressBar
-        android:id="@+id/progress_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:max="90"
-        android:progress="0"
-        android:secondaryProgress="0"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/word"
-            android:layout_width="wrap_content"
-            android:layout_height="79dp"
-            android:layout_marginLeft="10dp"
-            android:text="word"
-            android:textColor="@color/black"
-            android:textSize="43dp"
-            android:textStyle="bold" />
-        <ImageView
-            android:id="@+id/audio2"
-            android:layout_width="29dp"
-            android:layout_height="59dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="50dp"
-            android:src="@mipmap/audio" />
-    </LinearLayout>
     <TextView
-        android:id="@+id/phoneticView"
-        android:layout_weight="0.5"
+        android:id="@+id/word2"
+        android:text="word"
+        android:layout_weight="1.5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/color2"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp"/>
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:id="@+id/audio3"
+        android:layout_width="64dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/audio" />
     <TextView
-        android:id="@+id/meaning"
+        android:id="@+id/phoneticView2"
+        android:layout_weight="0.5"
+        android:text="word"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
         android:layout_marginTop="10dp"
         android:textColor="@color/color2"
         android:layout_marginLeft="10dp"
@@ -83,27 +61,24 @@
         android:textColor="@color/color1"
         android:textSize="20sp"/>
     <TextView
-        android:id="@+id/exampleView"
+        android:id="@+id/exampleView2"
         android:layout_weight="0.5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"/>
-
+        android:layout_marginBottom="10dp"
+        android:text="sentence"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:background="#e1e1e1"/>
-
     <LinearLayout
         android:layout_weight="5"
         android:layout_width="match_parent"
         android:layout_height="168dp"
         android:orientation="vertical">
-
         <TextView
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -111,7 +86,6 @@
             android:text="笔记"
             android:textColor="@color/color1"
             android:textSize="20sp" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="142dp"
@@ -119,15 +93,4 @@
             android:layout_marginTop="10dp"
             android:text="我的笔记" />
     </LinearLayout>
-    <Button
-        android:layout_weight="0.8"
-        android:id="@+id/next"
-        android:layout_width="299dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@drawable/bt_shape1"
-        android:gravity="center"
-        android:padding="15dp"
-        android:text="下一个"
-        android:layout_marginBottom="10dp"/>
 </LinearLayout>
